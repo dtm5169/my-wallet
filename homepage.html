@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <section class="hero is-primary">
+        <div class="hero-body">
+           <h1 class="title">Add Transactions</h1>
+          <p class="subtitle">
+            Track and manage your finances
+          </p>
+        </div>
+      </section>
+    <div class="container is-widescreen">
+        <div class="notification is-primary">
+            <div class="control">
+                <h3>Name</h3>
+                <input class="input is-focused" type="text" placeholder="Focused input">
+              </div>
+              <h3>Amount</h3>
+              <div class="control">
+                <input class="input is-focused" type="text" placeholder="Focused input">
+              </div>
+              <div class="buttons has-addons ">
+                <button id="income-btn" class="button is-success is-selected 0.5 $link-active">Income</button>
+                <button id="expense-btn" class="button is-success is-selected 0.5 $link-active">Expense</button>
+              </div>
+        </div>
+        <div class="field is-grouped">
+            <p class="control">
+              <button id="save-btn" class="button is-link">
+                Save changes
+              </button>
+            </p>
+          </div>
+      </div>
 </body>
 </html>
