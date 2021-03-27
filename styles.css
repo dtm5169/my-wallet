@@ -1,0 +1,23 @@
+#wallet {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.flex {
+    display: flex;
+}
+
+@media only screen and (max-width: 763px){
+    #flex{
+        display: block;
+        margin-left: 0px;
+    }
+    hr{
+        display: none;
+    }
+    .budget{
+        height: auto;
+    }
+    #expenseName, #expenseAmount{
+        width: 250px;
+    }
+}
