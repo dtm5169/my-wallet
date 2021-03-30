@@ -5,34 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <title>Document</title>
 </head>
 <body>
     <section class="hero is-primary">
-        <div class="hero-body">
-<<<<<<< HEAD
-           <h1 id="wallet" class="title">My Wallet</h1>
-=======
-           <h1 class="title">Add Transactions</h1>
->>>>>>> e202a7e760c29cfabf653ec04c0eb8512322c50e
-          <p class="subtitle">
-            Track and manage your finances
-          </p>
+        <div class="hero-body" >
+           <h1 id="expense" class="title">My Wallet</h1>
         </div>
-<<<<<<< HEAD
     </section>
       <br>
     <div class="container is-widescreen">
         <div class="notification is-primary">
             <div class="control" id="flex">
-                <h2>monthly income: <span id="monthlyIncome"> 0</span></h1>
-               
+                <h2>Monthly Income: <span id="monthlyIncome"> 0</span></h2>   
             </div>
-
             <div>
-              <h3>Current Income : <span id="currentIncome"> 0</h2>
+              <h3>Current Income : <span id="currentIncome"> 0</h3>
               <div class="control">
               </div>
               <div class="buttons has-addons ">
@@ -43,42 +32,28 @@
             <input type="number" placeholder="add money" id="money">
             <button class="button is-success" onclick="addMoney()" id="addmoney">Add Money</button>
         </div>
-
         <div>
             <h5>Add Expenses</h5>
             <input type="text" placeholder="expense name" id="expenseName"> 
+            <input type="number" placeholder="add amount" id="expenseAmount">
             <button class="button is-success" onclick="addExpense()" id="addExpense">Add Expense</button>
+            
         </div>
-       
-
-      <script src="script.js"></script>
-=======
-      </section>
-    <div class="container is-widescreen">
-        <div class="notification is-primary">
-            <div class="control">
-                <h3>Name</h3>
-                <input class="input is-focused" type="text" placeholder="Focused input">
-              </div>
-              <h3>Amount</h3>
-              <div class="control">
-                <input class="input is-focused" type="text" placeholder="Focused input">
-              </div>
-              <div class="buttons has-addons ">
-                <button id="income-btn" class="button is-success is-selected 0.5 $link-active">Income</button>
-                <button id="expense-btn" class="button is-success is-selected 0.5 $link-active">Expense</button>
-              </div>
-        </div>
-        <div class="field is-grouped">
-            <p class="control">
-                <a href="./data.html">
-              <button id="save-btn" class="button is-link">
-                Save changes
-              </button>
-                </a>
-            </p>
-          </div>
-      </div>
->>>>>>> e202a7e760c29cfabf653ec04c0eb8512322c50e
+        
+    </div> 
+    <table class="table center table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Expense Name</th>
+            <th scope="col">Expense Amount</th>
+          </tr>
+        </thead>
+        <tbody >
+        </tbody>
+      </table>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>
