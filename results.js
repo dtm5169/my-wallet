@@ -5,20 +5,11 @@ let data2 = JSON.parse(localStorage.getItem("Data") )
 
 
 function drawChart() {
-  
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    console.log(`${key}: ${localStorage.getItem(key)}`);
-
-  var data = google.visualization.arrayToDataTable([
-    ['Income', 'Data'],
-    // ['income', localStorage.getItem("Income")],
-    [data2[i].name, data2[i].amount],
-
-  ]);
-
+  const renderdata =[['Income', 'Data']];
+  for (let i = 0; i < data2.length; i++) {
+  renderdata.push([data2[i].name,data2[i].amount]);
 }
-
+var data = google.visualization.arrayToDataTable(renderdata);
   var options = {
     title: 'My Wallet',
     pieHole: 0.4,
