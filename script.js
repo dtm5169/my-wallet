@@ -34,6 +34,7 @@ function addMoney() {
     //used to return the element that has the ID attribute with the specified value
     document.getElementById("monthlyIncome").innerHTML = monthlyIncome;
     document.getElementById("currentIncome").innerHTML = currentIncome;
+    localStorage.setItem("Income",monthlyIncome)
   }
 }
 
