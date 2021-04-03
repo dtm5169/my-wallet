@@ -14,6 +14,7 @@ During this project our group members learned, how to apply nyt api, how to buil
 ## Installation
 
 Simply click on out deployment link
+https://dtm5169.github.io/my-wallet/
 
 
 ## Usage 
