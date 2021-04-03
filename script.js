@@ -33,7 +33,7 @@ function addMoney() {
   else {
     monthlyIncome += money;
     currentIncome += money;
-    renderList();
+
   }
 }
 
