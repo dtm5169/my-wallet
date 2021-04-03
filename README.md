@@ -21,7 +21,10 @@ Simply click on out deployment link
 When you first enter the site you will be prompted to log in, hit sumbit and you will be led to the budget calulator, where you can add and subtract your income and expenses, once completed you click submit data, and you will lead to the visual data of you expenses and nyt businnes news. 
 
 ```md
-![alt text](assets/images/screenshot.png)
+![alt text](assets/login.png)
+![alt text](assets/moneygif.png)
+![alt text](aassets/newsart.png)
+![alt text](assets/visualdata.png)
 ```
 
 
@@ -30,6 +33,8 @@ When you first enter the site you will be prompted to log in, hit sumbit and you
 NYT api
 Bulma 
 Giphy api
+https://wallpaperaccess.com/piggy-bank
+https://www.svgbackgrounds.com/#wavey-fingerprint
 
 
 

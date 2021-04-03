@@ -22,18 +22,76 @@
       </div>
     </section>
   
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./index.html">
+            Home
+          </a>
+          <a class="navbar-item" href="./homepage.html">
+            My Wallet
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="./data.html">
+             Wallet Stats
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item"  href="#donutchart">
+                Chart
+              </a>
+              <a class="navbar-item" href="#news">
+                News
+              </a>
+              <a class="navbar-item" href="#input">
+              Giphy
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Share Finance goals">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>
+                    Tweet
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <!-- -------------------------donutchart --------------------------------->
+
     <div id="donutchart"></div>
-  
-        <h1 class="fin-advice">The More You Know</h1>
+
+  <!-- --------------------------------news--------------------------------- -->
+    <h1 class="fin-advice">The More You Know</h1>
     <p class="fin-advice">Here are some currents event regarding business</p>
     
     <div class="tile" id="news"></div>
     <figure class="image is-128x128" id="gif"></figure>
-      </div>
+    </div>
     </div>
 
-    
+   <!----------------------------------giphy--------------------------------  -->
     <div class="gif-search">
+      <a href=""></a>
       <input type = "text" id = "input">
       <div id = "btn" onclick = "giphySearch()">
         <span class = "noselect">Giphy!</span>
