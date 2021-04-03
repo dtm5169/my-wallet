@@ -9,14 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="hero is-primary">
+    <section class="hero is-info">
         <div class="hero-body" >
            <h1 id="expense" class="title">My Wallet</h1>
         </div>
     </section>
       <br>
     <div class="container is-widescreen">
-        <div class="notification is-primary">
+        <div class="notification is-info">
             <div class="control" id="flex">
                 <h2>Monthly Income: <span id="monthlyIncome"> 0</span></h2>   
             </div>
@@ -30,13 +30,13 @@
         <div>
             <br><h4>Add Money to budget</h4>
             <input type="number" placeholder="add money" id="money">
-            <button class="button is-success" onclick="addMoney()" id="addmoney">Add Money</button>
+            <button class="button is-info is-light" onclick="addMoney()" id="addmoney">Add Money</button>
         </div>
         <div>
             <h5>Add Expenses</h5>
             <input type="text" placeholder="expense name" id="expenseName"> 
             <input type="number" placeholder="add amount" id="expenseAmount">
-            <button class="button is-success" onclick="addExpense()" id="addExpense">Add Expense</button>
+            <button class="button is-info is-light" onclick="addExpense()" id="addExpense">Add Expense</button>
         </div>
         
     </div> 
@@ -50,7 +50,10 @@
         <tbody id="list">
         </tbody>
     </table>
-
+    <a href="data.html">
+        <button class="button is-info is-fullwidth">
+          Login
+        </button>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
