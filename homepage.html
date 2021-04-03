@@ -24,7 +24,7 @@
               <h3>Current Income : <span id="currentIncome"> 0</h3>
               <div class="control">
               </div>
-              <div class="buttons has-addons ">
+              <div class="buttons has-addons">
             </div>
         </div>
         <div>
@@ -37,29 +37,19 @@
             <input type="text" placeholder="expense name" id="expenseName"> 
             <input type="number" placeholder="add amount" id="expenseAmount">
             <button class="button is-success" onclick="addExpense()" id="addExpense">Add Expense</button>
-            
         </div>
         
     </div> 
     <table class="table center table-striped">
-        <thead>
+        <thead class="items">
           <tr>
             <th scope="col">Expense Name</th>
             <th scope="col">Expense Amount</th>
           </tr>
         </thead>
-        <tbody >
+        <tbody id="list">
         </tbody>
-      </table>
-      <div class="field has-text-centered">
-        <p class="control">
-          <a href="data.html">
-          <button class="button is-success">
-            Login
-          </button>
-          </a>
-        </p>
-      </div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
