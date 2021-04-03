@@ -62,3 +62,35 @@ fetch(url)
 
 /*------------------------------------------------testing------------------------------------------------------*/
 
+// var api_key='cJcjUA7w5Mw1imSK1aviBKNh0iE4rhRM'
+// var requestUrl = 'https://api.giphy.com/v1/gifs/search?q=financial&api_key=' + api_key + '&limit=10';
+// let gif = document.getElementById('gif')
+//   fetch(requestUrl)
+//     .then(function (data) {
+//       console.log(data)
+//       return data.json()
+//     })
+// .then(result=> {
+//     console.log(result);
+// })
+// .catch(err => {
+//     console.error(err);
+
+//     let gify = document.createElement ('figure')
+
+//     gify.setAttribute('class','image is-128x128');
+//     let image = document.createElement('img')
+//     image.setAttribute('img','result')
+
+//     gify.appendChild(image)
+//     gif.appendChild(gify)
+
+
+// });
+
+
+
+
+// // <figure class="image is-128x128">
+// //   <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+// </figure>
