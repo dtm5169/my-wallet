@@ -1,0 +1,28 @@
+
+#news {
+
+    display: flex;
+   flex-direction: column ;
+    width: 75%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.tile .is-parent {
+    flex-basis: 40%;
+ 
+}
+.fin-advice {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 80px;
+    font-family: 'Fjalla One', sans-serif;
+}
+#donutchart {
+display: flex;
+justify-content: center;
+margin-left: 60vh;
+background-color: ;
+
+} 
