@@ -11,8 +11,11 @@ function drawChart() {
 }
 var data = google.visualization.arrayToDataTable(renderdata);
   var options = {
-    title: 'My Wallet',
-    pieHole: 0.4,
+    title: 'Expense Stats',
+    pieHole: 1.0,
+  'width':950,
+    'height':600,
+   
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
@@ -60,37 +63,23 @@ fetch(url)
 
 
 
-/*------------------------------------------------testing------------------------------------------------------*/
+/*------------------------------------------------giphy------------------------------------------------------*/
 
-// var api_key='cJcjUA7w5Mw1imSK1aviBKNh0iE4rhRM'
-// var requestUrl = 'https://api.giphy.com/v1/gifs/search?q=financial&api_key=' + api_key + '&limit=10';
-// let gif = document.getElementById('gif')
-//   fetch(requestUrl)
-//     .then(function (data) {
-//       console.log(data)
-//       return data.json()
-//     })
-// .then(result=> {
-//     console.log(result);
-// })
-// .catch(err => {
-//     console.error(err);
-
-//     let gify = document.createElement ('figure')
-
-//     gify.setAttribute('class','image is-128x128');
-//     let image = document.createElement('img')
-//     image.setAttribute('img','result')
-
-//     gify.appendChild(image)
-//     gif.appendChild(gify)
-
-
-// });
-
-
-
-
-// // <figure class="image is-128x128">
-// //   <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-// </figure>
+function giphySearch() {
+  var userInput = document.getElementById("input").value
+  console.log(userInput)
+  
+  var giphyApiKey = "btdF44P4FwFCWck8gLZv06dYHmUDigjy"
+  var giphyApiURL = `https://api.giphy.com/v1/gifs/search?q=${userInput}&rating=g&api_key=${giphyApiKey}`
+  
+  fetch(giphyApiURL).then(function(data) {
+      return data.json()
+  })
+  .then(function(json){
+    console.log(json.data[0].images.fixed_height.url)
+    var imgPath = json.data[0].images.fixed_height.url
+    var img = document.createElement("img")
+    img.setAttribute("src", imgPath)
+    document.body.appendChild(img)
+  })
+}

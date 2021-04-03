@@ -1,4 +1,9 @@
-
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+}
+/*news articles styling*/
 #news {
 
     display: flex;
@@ -8,21 +13,93 @@
     margin: 0 auto;
 }
 
-.tile .is-parent {
+.tile.is-parent {
     flex-basis: 40%;
- 
 }
+
+
 .fin-advice {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    font-size: 80px;
+    font-size: 30px;
     font-family: 'Fjalla One', sans-serif;
 }
+
+/* .notification .is-danger {
+    background-color: #48c774b5;
+    color: #fff;
+} */
+/*Donut chart styling*/
+
 #donutchart {
 display: flex;
 justify-content: center;
-margin-left: 60vh;
-background-color: ;
-
+margin-left: 20vh;
 } 
+rect{
+    fill: transparent;
+}
+
+/* giphy styling*/
+
+#btn {
+    background:#f14668;;
+    height: 45px;
+    min-width: 90px;
+    border:none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 25px;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-left: 15px;
+  }
+  
+  #btn #circle {
+    height: 5px;
+    width: 2px;
+    background: transparent;
+    border-radius: 5%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  
+  #input {
+    background: #f14668;
+    height: 45px;
+    width: 300px;
+    border:none;
+    border-radius: 5px;
+    color: pink;
+    font-size: 45px;
+    padding-left: 15px;
+  }
+
+  .gif-search{
+      display: flex;
+      justify-content: center;
+  }
+
+
+@media only screen and (max-width: 763px){
+    #news{
+        display:inline-flex;
+        margin-left: 0px;
+    }
+
+    .fin-advice{
+        display:inline-flex;
+        justify-content: center;
+    }
+
+}
